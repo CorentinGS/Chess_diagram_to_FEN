@@ -14,7 +14,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-matplotlib = "3.9.1"
+matplotlib = "3.8.4"
 scikit-image = "0.22.0"
 python-chess = "1.999"
 
