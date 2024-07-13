@@ -1,29 +1,32 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
+[tool.poetry]
 name = "Chess_diagram_to_FEN"
 version = "0.0.1"
 authors = [
-  { name="Jost Triller", email="tsoj.tsoj@gmx.de" },
+    "Jost Triller <tsoj.tsoj@gmx.de>",
 ]
 description = "Convert images of chess diagrams into FENs"
 readme = "README.md"
-requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-dependencies = [
-  "matplotlib ~= 3.8.2",
-  "scikit-image ~= 0.22.0",
-  "tqdm ~= 4.66.1",
-  "python-chess ~= 1.999",
-  "cairosvg ~= 2.7.1",
-  "pyfastnoisesimd ~= 0.4.2"
-]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "3.8.2"
+scikit-image = "0.22.0"
+python-chess = "1.999"
+
+[tool.poetry.dev-dependencies]
+pyfastnoisesimd = "0.4.2"
+cairosvg = "2.7.1"
+tqdm = "4.66.1"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project.urls]
 Homepage = "https://github.com/tsoj/Chess_diagram_to_FEN"
