@@ -18,6 +18,7 @@ matplotlib = "3.8.4"
 scikit-image = "0.22.0"
 python-chess = "1.999"
 cairosvg = "2.7.1"
+numpy = "1.26.4"
 
 [tool.poetry.dev-dependencies]
 pyfastnoisesimd = "0.4.2"
